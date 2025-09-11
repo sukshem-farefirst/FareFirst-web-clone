@@ -1,0 +1,86 @@
+.inputdiv {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border:none;
+  border-right: none;
+  min-width: 300px;
+}
+
+.inputdiv i {
+  padding-left: 6px;
+  margin-right: 8px;
+  font-size: 20px;
+  color: black;
+}
+
+.inputdiv input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  width: 120%;
+  color: black;
+  font-weight: 600;
+}
+
+.refernce {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fcfbfb;
+  border: 1px solid #ddd;
+  border-radius: 0 0 6px 6px;
+  margin-top:5px;
+  width: 15vw;
+  overflow-y: scroll;
+  z-index: 100;
+}
+
+.suggestionitem {
+  padding: 10px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+  gap: 0.5rem;
+}
+
+.suggestionitem:hover {
+  background: #f1f1f1;
+}
+
+.suggestioncode {
+  width: 40px;
+  font-size: 12px;
+  border: 1px solid;
+  display: inline-block;
+  padding: 2px;
+  font-weight: bold;
+  color: blue;
+}
+
+.searchbutton {
+  background: #2ecc71;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+}
+
+.searchbutton:hover {
+  background: #27ae60;
+}
+
+@media screen and (max-width: 768px){
+  .inputdiv input{
+    width:"70vw";
+  }
+}

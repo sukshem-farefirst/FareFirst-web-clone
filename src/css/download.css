@@ -1,0 +1,57 @@
+.downloadmaindiv {
+    background-image: url("../assets/homepage/download-bg-image.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-color: #0d6efd; 
+    color: white;
+    padding-top: 25px;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 10px;
+}
+
+.downloadtext {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.downloadmainimage {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.downloadimage {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.downloadimage img {
+    height: 55px;
+    width: auto;
+}
+
+.downloadphone img {
+    height: 350px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .downloadmaindiv {
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2vh;
+    }
+    .downloadimage img {
+        height: 50px;
+        width: auto;
+    }
+   .downloadphone img {
+        height: 0;
+        width: auto;
+    }
+}
