@@ -17,6 +17,7 @@
 }
 
 .custom-datepicker {
+  padding-left: 10px;
   border: none;
   outline: none;
   font-size: 15px;

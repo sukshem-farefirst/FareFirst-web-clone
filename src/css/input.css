@@ -34,7 +34,7 @@
   border: 1px solid #ddd;
   border-radius: 0 0 6px 6px;
   margin-top:5px;
-  width: 15vw;
+  width: 300px;
   overflow-y: scroll;
   z-index: 100;
 }
@@ -82,5 +82,18 @@
 @media screen and (max-width: 768px){
   .inputdiv input{
     width:"70vw";
+  }
+  .refernce{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fcfbfb;
+    border: 1px solid #ddd;
+    border-radius: 0 0 6px 6px;
+    margin-top:5px;
+    width: 300px;
+    overflow-y: scroll;
+    z-index: 100;
   }
 }

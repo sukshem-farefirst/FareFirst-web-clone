@@ -27,6 +27,7 @@ svg {
 
 input {
     border: none;
+    outline: none;
     background-color: #d2d7db9d;
     width: 15vw;
     padding: 4px;

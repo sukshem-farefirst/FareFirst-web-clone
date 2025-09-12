@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/email.css";
 
 function Email() {
+
+    const [workingButton, setWorkingButton]=useState(true)
+
+    function inputChange(event){
+        const value=event.target.value;
+        if(value.length>=8 && value.includes('@')){
+            setWorkingButton(false);
+        }
+        else{
+            setWorkingButton(true);
+        }
+    }
+
     return (
         <>
             <div className="maindiv">
@@ -20,12 +33,14 @@ function Email() {
                 <div className="emaildiv">
                     <input
                         type="email"
+                        onChange={inputChange}
                         placeholder="Enter your email"
                         aria-label="Email"
+                        required
                     />
-                    <button className="button" type="button">
+                    <a href="https://www.farefirst.com/"><button className="button" type="button" disabled={workingButton}>
                         Subscribe
-                    </button>
+                    </button></a>
                 </div>
             </div>
         </>

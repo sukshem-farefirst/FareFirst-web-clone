@@ -99,3 +99,17 @@
   line-height: 1.4;
   color: #ababab;
 }
+
+@media screen and (max-width: 768px){
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  .search-button{
+    width:300px;
+  }
+}

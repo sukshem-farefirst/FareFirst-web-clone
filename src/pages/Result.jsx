@@ -85,80 +85,57 @@ function Result() {
                   <div className="resultdiv">
                     <div className="airline">
                       <div>
-                      {flight.from.airlineLogoUrl && (
-                        <img src={flight.from.airlineLogoUrl} alt="airline logo" />
-                      )}</div>
-                      <div  style={{ display: "flex", flexDirection: "column", justifyContent:"flex-end", alignItems:"center" }}>
+                        {flight.from.airlineLogoUrl && (
+                          <img src={flight.from.airlineLogoUrl} alt="airline logo" />
+                        )}
+                      </div>
+                      <div>
                         <p className="route">{flight.from.iata} – {flight.to.iata}</p>
                         <p className="airline-name">{flight.gate.name}</p>
                       </div>
                     </div>
 
-                    <div  style={{ display: "flex", flexDirection: "column", alignItems:"center", justifyContent:"center" }}>
-                       <p className="time">{flight.from.time} – {flight.to.time}</p>
-                       <p className="duration">{flight.total_duration?.h}:{flight.total_duration?.m}</p>
+                    <div className="time-duration">
+                      <p className="time">{flight.from.time} – {flight.to.time}</p>
+                      <p className="duration">{flight.total_duration?.h}h {flight.total_duration?.m}m</p>
                     </div>
 
-                    <div className="direct">
-                      <p className="direct" style={{fontSize:"16px", fontWeight:"700"}}>Direct</p>
-                    </div>
+                    <div className="direct">Direct</div>
 
                     <div className="price">
-                      <p >₹{Number(flight.price.amount).toLocaleString("en")}</p>
+                      <p>₹{Number(flight.price.amount).toLocaleString("en")}</p>
                       <button className="book-btn" onClick={handleBookNow}>Book Now</button>
                     </div>
                   </div>
 
-
+                  {/* Expanded details */}
                   {isExpanded && (
                     <div>
-                      <div>
-                          {plane_dep_image} {flight.from.info.city} – {flight.to.info.city}
-                      </div>
-                    
-                      <div
-                        className="expanded-details"
-                        style={{
-                          display: "flex",
-                          flexDirection: "row",
-                          padding: "1vh",
-                          borderRadius: "10px",
-                          justifyContent: "space-between",
-                          backgroundColor: "#f8fafbff",
-                        }}
-                      >
+                      <div className="expanded-details">
+                        <div>{showdate}</div>
                         <div>
-                            {showdate}
-                        </div>
-
-                        <div style={{display:"flex", justifyContent:"center"}}>
                           {flight.from.airlineLogoUrl && (
-                            <img style={{width:"50px", height:"50px"}} src={flight.from.airlineLogoUrl} alt="airline logo" />
+                            <img src={flight.from.airlineLogoUrl} alt="airline logo" />
                           )}
                         </div>
-                        <div style={{ display: "flex", flexDirection: "column"}}>
+                        <div>
                           <p>{flight.from.time} – {flight.to.time}</p>
                           <p>{flight.from.info?.city} – {flight.to.info?.city}</p>
                           <p>{flight.from.info?.name} – {flight.to.info?.name}</p>
                           <p>{flight.gate.name}</p>
                         </div>
-                        <div className="details-extra" style={{ display: "flex", flexDirection: "column", alignItems:"center"}}>
+                        <div className="details-extra">
                           <p>{flight.total_duration?.h}h {flight.total_duration?.m}m</p>
                           <p>Stops: {flight.totalStops}</p>
                         </div>
-                      </div>  
-                   </div>
+                      </div>
+                    </div>
                   )}
 
-
-                  <div
-                    style={{ display: "flex", justifyContent: "center", color: "blue", cursor: "pointer" }}
-                    onClick={() => toggleExpand(index)}
-                  >
+                  <div className="expand-toggle" onClick={() => toggleExpand(index)}>
                     <i className={`fa-solid fa-caret-${isExpanded ? "up" : "down"}`}></i> 
                   </div>
                 </div>
-
               );
             })}
       </div>
