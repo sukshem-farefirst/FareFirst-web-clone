@@ -1,13 +1,13 @@
 import React from "react";
 import "../css/download.css";
 
-import Play from "../assets/homepage/playstore.svg";
-import Huawei from "../assets/homepage/huawei.svg";
-import App from "../assets/homepage/app.svg";
-import Indus from "../assets/homepage/indusapp.png";
-import Galaxy from "../assets/homepage/galaxyStore.png";
-import Bixby from "../assets/homepage/Bixby.png";
-import Phone from "../assets/homepage/mobile.png";
+import Play from "../assets/playstore.svg";
+import Huawei from "../assets/huawei.svg";
+import App from "../assets/app.svg";
+import Indus from "../assets/indusapp.png";
+import Galaxy from "../assets/galaxyStore.png";
+import Bixby from "../assets/Bixby.png";
+import Phone from "../assets/mobile.png";
 
 function Download() {
     return (

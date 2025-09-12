@@ -61,12 +61,12 @@
 }
 
 
-.spain { background-image: url("../assets/homepage/spain.jpg") }
-.turkey { background-image: url("../assets/homepage/turkey.jpg") }
-.morocco { background-image: url("../assets/homepage/moroco.jpg") }
-.france { background-image: url("../assets/homepage/france.jpg") }
-.thailand { background-image: url("../assets/homepage/Thailand.jpg") }
-.mexico { background-image: url("../assets/homepage/Mexico.jpg") }
+.spain { background-image: url("../assets/spain.jpg") }
+.turkey { background-image: url("../assets/turkey.jpg") }
+.morocco { background-image: url("../assets/moroco.jpg") }
+.france { background-image: url("../assets/france.jpg") }
+.thailand { background-image: url("../assets/Thailand.jpg") }
+.mexico { background-image: url("../assets/Mexico.jpg") }
 
 
 @media (max-width: 1024px) {

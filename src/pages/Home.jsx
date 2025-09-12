@@ -10,7 +10,7 @@ import Search1 from "../components/Search";
 import Offers from "../components/Offers";
 import Destinations from "../components/Destinations";
 
-import bgImage from "../assets/homepage/bg-image.png";
+import bgImage from "../assets/bg-image.png";
 
 function Home() {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
-import Kiwi from "../assets/homepage/kiwi.png";
-import Expedia from "../assets/homepage/Expedia.png";
-import Flight from "../assets/homepage/FightNetwork.png";
-import Indigo from "../assets/homepage/Indigo.png";
-import Yatra from "../assets/homepage/yatra.png";
+import Kiwi from "../assets/kiwi.png";
+import Expedia from "../assets/Expedia.png";
+import Flight from "../assets/FightNetwork.png";
+import Indigo from "../assets/Indigo.png";
+import Yatra from "../assets/yatra.png";
 import "../css/travelagency.css";  
 
 function TravelAgency() {

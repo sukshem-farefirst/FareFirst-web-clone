@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/offers.css";
-import OfferImage from "../assets/homepage/offerImage.png";
+import OfferImage from "../assets/offerImage.png";
 
 function Offer() {
   return (
