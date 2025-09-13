@@ -55,3 +55,19 @@
         width: auto;
     }
 }
+
+@media (max-width: 480px) {
+    .downloadmaindiv {
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2vh;
+    }
+    .downloadimage img {
+        height: 45px;
+        width: auto;
+    }
+   .downloadphone img {
+        height: 0;
+        width: auto;
+    }
+}

@@ -49,3 +49,9 @@
     flex-direction: row;
   }
 }
+
+@media (max-width: 768px) {
+  .features-section {
+    display: none;
+  }
+}

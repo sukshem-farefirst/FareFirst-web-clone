@@ -22,7 +22,6 @@ svg {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    max-width: 600px;
 }
 
 input {
@@ -33,14 +32,14 @@ input {
     padding: 4px;
     font-size: 1rem;
     border-radius: 4px;
-    min-width: 180px;
+    width: 400px;
 }
 
 .button {
     background-color: #FF570F;
     border: none;
     color: white;
-    width: 7.5vw;
+    width: 150px;
     padding: 4px;
     font-size: 1rem;
     border-radius: 4px;
@@ -49,12 +48,13 @@ input {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .emailhead {
-        flex-direction: column;
         gap: 10px;
     }
-
+    .email-image svg{
+        width: 50px;
+    }
     .emaildiv {
         justify-content: center;
         flex-direction: row;
@@ -64,6 +64,29 @@ input {
         font-size: 12px;
     }
     input{
-        width: 60%;
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .emailhead {
+        gap: 10px;
+    }
+    .email-image svg{
+        display: none;
+    }
+    .emaildiv {
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .text > p{
+        font-size: 12px;
+    }
+    input{
+        width: 200px;
+    }
+    .button{
+        width: 50px;
     }
 }

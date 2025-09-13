@@ -14,7 +14,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .destination-row1,
@@ -72,6 +73,8 @@
 @media (max-width: 1024px) {
     .destination.content{
         flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .destination-row1,
     .destination-row2 {
@@ -121,6 +124,8 @@
     .destination-row2 {
         flex-direction: column;
         align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .spain,
@@ -129,7 +134,6 @@
     .france,
     .thailand,
     .mexico {
-        flex: none;
         width: 70vw;   
         height: 10vh;
     }
